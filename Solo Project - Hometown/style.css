@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first-color: #662309;
+    --second-color: #6f8397;
+    --third-color: #0e1d28;
+    --forth-color: #d9cdbf;
+    --fifth-color: #f7e8de;
+    --sixth-color: #bec6ce;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 100px auto;
+    padding-bottom: 50px;
+    border: solid 1px var(--second-color);
+    box-shadow: 0 0 20px var(--third-color);
+}
+
+
+.breakline {
+    height: 1px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: var(--forth-color);
+}
+/*********  HERO   ***************/
+
+#hero {
+    background: url('assets/hero2.jpg');
+    background: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 250px;
+    color: var(--third-color);
+    
+}
+
+
+
+.hero-text-one {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--third-color);
+    padding: 8px 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero-text-two {
+    width: 400px;
+    padding: 8px 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--third-color);
+    font-style: italic;
+    letter-spacing: 0.05rem;
+}
+
+
+/*********  ACTIVITIES   ***************/
+
+.activity-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fifth-color);
+    color: var(--first-color);
+}
+
+.col-title {
+    text-align: center;
+    margin: 50px;
+}
+
+.columns-activities {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.col-act {
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img-act {
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid var(--first-color);
+    box-shadow: 0 0 10px var(--first-color);
+}
+
+.img-act:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px var(--first-color);
+}
+
+.text {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.act-title {
+    text-align: center;
+    padding:  20px 10px;
+}
+
+.act-descrip {
+    text-align: center;
+}
+
+/********  MAP SECTION  ********************/
+
+.map-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--first-color);
+    padding: 50px 30px;
+}
+
+.topo {
+    /*width: 600px;*/
+    height: 750px;
+}
+
+.col-map-text {
+    width: 600px;
+    text-align: center;
+}
+
+.map-title {
+    padding: 15px 0;
+}
+
+.item {
+    list-style: none;
+    padding: 6px 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*******  CALL TO ACTION   ****************/
+
+.cta-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fifth-color);
+    margin: 50px 0;
+}
+
+.cta-img {
+    width: 550px;
+}
+
+.cta-col-text {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding: 0 10px;*/
+    
+}
+
+.cta-sub-title {
+    padding: 10px 0;
+    font-weight: 300;
+}
+
+.cta-title {
+    padding: 10px 0;
+}
+
+.cta-paragraph {
+    padding: 10px 0;
+}
+
+label {
+    padding: 10px 0 5px 0;
+}
+
+.star {
+    width: 10px;
+}
+
+
+/* newsletter */
+.newsletter {
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+input {
+    width: 350px;
+    padding: 15px;
+    color: var(--sixth-color);
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    border: 1px solid var(--sixth-color);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.newsletter-btn {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 60px;
+    background-color: var(--sixth-color);
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 0.07rem;
+}
+
+.newsletter-btn:hover {
+    cursor: pointer;
+    background-color: var(--third-color);
+}
+
+/*********  FOOTER SECTION   ***************/
+
+footer {
+    background-color: #fff;
+    
+}
+
+.guide {
+    width: 500px;
+    margin: 80px auto;
+    background-color: var(--forth-color);
+    box-shadow: 5px 5px 10px var(--first-color);
+    border-radius: 10px;
+    
+}
+
+.columns-guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    
+    
+}
+.col-guide-two {
+    width: 250px;
+    text-align: center;
+    color: var(--dark-blue);
+    padding: 10px;
+}
+
+#guide-photo {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.guide-title {
+    margin-bottom: 10px;
+}
+
+.guide-desc {
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.2rem;
+}
+
